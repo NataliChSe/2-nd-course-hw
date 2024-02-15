@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top-box {
+  height: 1024px;
+  background-image: url(/img/home.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top-box__title {
+  padding-top: 217px;
+  padding-bottom: 32px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  color: #FFF;
+}
+.top-box__text {
+  padding-bottom: 44px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.top-box__text_brighter {
+  font-weight: 700;
+}
+.top-box__button {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  border: none;
+  background: rgb(156, 3, 50);
+}
+.top-box__button:hover {
+  cursor: pointer;
+  background: rgb(235, 68, 63);
+}
+
+.game-box {
+  background: rgb(0, 9, 21);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 32px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.game-box__img {
+  position: relative;
+  min-height: 300px;
+  min-width: 379px;
+}
+.game-box__img:hover {
+  border: 3px solid rgb(68, 210, 255);
+  border-radius: 16px;
+}
+.game-box__img_1 {
+  border-radius: 16px;
+}
+.game-box__img_2 {
+  border-radius: 16px;
+}
+.game-box__img_3 {
+  border-radius: 16px;
+}
+.game-box__text {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  border-radius: 30px;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}/*# sourceMappingURL=style.css.map */
