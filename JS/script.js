@@ -42,9 +42,9 @@ alert(result);
 
 // ***   6   ***
 
-let a = 9;
-let b = 2;
-alert(a % b);
+let c = 9;
+let d = 2;
+alert(c % d);
 
 
 
