@@ -49,6 +49,7 @@ body {
   border-radius: 30px;
   border: none;
   background: rgb(156, 3, 50);
+  transition: all 0.5s;
 }
 .top-box__button:hover {
   cursor: pointer;
@@ -68,6 +69,7 @@ body {
   position: relative;
   min-height: 300px;
   min-width: 379px;
+  transition: all 0.5s;
 }
 .game-box__img:hover {
   border: 3px solid rgb(68, 210, 255);
@@ -91,4 +93,28 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top-box {
+    text-align: center;
+  }
+  .top-box__title {
+    padding-top: 238px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .top-box__text {
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .game-box {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
