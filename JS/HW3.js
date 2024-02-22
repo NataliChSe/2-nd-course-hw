@@ -38,40 +38,16 @@ alert(a * b - 1);
 let monthNumber = 12;
 
 switch (monthNumber) {
-    case 12:
+    case 12 || 1 || 2:
         console.log('Зима');
         break;
-    case 1:
-        console.log('Зима');
-        break;
-    case 2:
-        console.log('Зима');
-        break;
-    case 3:
+    case 3 || 4 || 5:
         console.log('Весна');
         break;
-    case 4:
-        console.log('Весна');
-        break;
-    case 5:
-        console.log('Весна');
-        break;
-    case 6:
+    case 6 || 7 || 8:
         console.log('Лето');
         break;
-    case 7:
-        console.log('Лето');
-        break;
-    case 8:
-        console.log('Лето');
-        break;
-    case 9:
-        console.log('Осень');
-        break;
-    case 10:
-        console.log('Осень');
-        break;
-    case 11:
+    case 9 || 10 || 11:
         console.log('Осень');
         break;
     default:
@@ -98,7 +74,7 @@ if (!isNaN(enterNumber) && (enterNumber % 2 === 0)) {
 // ***   8-9   ***
 
 let clientOS = 0;
-let clientDeviceYear = 2015;
+const clientDeviceYear = 2015;
 
 if (clientOS === 0 && clientDeviceYear < 2015) {
     console.log('Установите облегченную версию приложения для iOS по ссылке');
