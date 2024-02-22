@@ -46,6 +46,7 @@ body {
         border-radius: 30px;
         border: none;
         background: rgb(156, 3, 50);
+        transition: all 0.5s;
         &:hover {
             cursor: pointer;
             background: rgb(235, 68, 63);
@@ -59,11 +60,12 @@ body {
     justify-content: space-between;
     row-gap: 32px;
     padding-top: 128px;
-    padding-bottom: 128px;
+    padding-bottom: 128px;;
     &__img {
         position: relative;
         min-height: 300px;
         min-width: 379px;
+        transition: all 0.5s;
         &:hover {
             border: 3px solid rgb(68, 210, 255);
             border-radius: 16px;
@@ -87,5 +89,7 @@ body {
         font-size: 24px;
         font-weight: 600;
         line-height: 32px;
+        cursor: pointer;
     }
 }
+@import 'mobile';
