@@ -19,6 +19,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 1024px;
 }
 .top-box__title {
   padding-top: 217px;
@@ -96,12 +97,84 @@ body {
   cursor: pointer;
 }
 
+.season-game {
+  background: rgb(0, 9, 21);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 233px;
+  padding-bottom: 233px;
+}
+.season-game__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+.season-game__title {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+}
+.season-game__text {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.season-game__button {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  border: none;
+  background: rgb(156, 3, 50);
+  transition: all 0.5s;
+}
+.season-game__button:hover {
+  cursor: pointer;
+  background: rgb(235, 68, 63);
+}
+.season-game__img_go {
+  width: 485px;
+  height: 333px;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .season-game {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .season-game__box {
+    padding-bottom: 64px;
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .game-box {
+    justify-content: center;
+  }
+}
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
   .top-box {
+    height: 735px;
     text-align: center;
   }
   .top-box__title {
@@ -116,5 +189,20 @@ body {
   }
   .game-box {
     justify-content: center;
+  }
+  .season-game {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 179px;
+    padding-top: 51px;
+    padding-bottom: 85px;
+  }
+  .season-game__box {
+    padding-bottom: 64px;
+  }
+  .season-game__img_go {
+    width: 344px;
+    height: 236px;
   }
 }/*# sourceMappingURL=style.css.map */
