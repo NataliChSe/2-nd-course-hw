@@ -11,14 +11,14 @@ function number(a, b) {
 number(5, 8);
 
 
+
 // ***   2   ***
 
 function parity(c) {
     if (c % 2 === 0) {
       return 'четное число';
-    } else if (c % 2 !== 0){
-      return 'нечетное число';
-    }
+    } 
+    return 'нечетное число';
  }
  
  parity(5);
@@ -26,12 +26,19 @@ function parity(c) {
 
 // ***   3   ***
 
+// 3.1
 function square (a) {
-    let squareNum = a ** 2
+    let squareNum = a ** 2;
     console.log(`Квадрат числа равен ${squareNum}`);
 }
-   
-square(5);
+square(5); 
+
+// 3.2
+function square (b) {
+    return b ** 2;
+}
+const result = square(5);
+console.log(`Квадрат числа равен ${result}`);
 
 
 
@@ -44,12 +51,30 @@ function userAge () {
     } else if (age >= 0 && age <= 12) {
         alert('Привет друг');
     }
-    else if (age >= 13) {
+    else {
         alert('Добро пожаловать');
     }
 }
 
 userAge ();
+
+
+
+
+
+
+let ageCheck = () => {
+    age = Number(prompt('Сколько вам лет?'));
+
+    if (isNaN(age) || Math.sign(age) === -1) {
+        return 'Вы ввели неправильное значение';
+    } else if (age > 0 && age <= 12) {
+        return 'Привет, друг!';
+    } {
+        return 'Добро пожаловать!';
+    }
+}
+alert(ageCheck());
 
 
 
@@ -69,16 +94,16 @@ numbers(2, 2);
 
 // ***   6   ***
 
-function enterNumber () {
-    let enterNumber = prompt('Пожалуйста, введите любое число');
-    if (isNaN(Number(enterNumber))) {
+function getCube () {
+    let enterNumber = Number(prompt('Пожалуйста, введите любое число'));
+    if (isNaN(enterNumber)) {
         return 'Переданный параметр не являются числом';
     } else {
         return enterNumber ** 3;
     }
 }
 
-enterNumber();
+getCube();
 
 
 
@@ -93,14 +118,14 @@ function getPerimeter () {
 
 const circle1 = { 
     radius: 7,
-    getArea: getArea,
-    getPerimeter: getPerimeter,
+    getArea,
+    getPerimeter,
 };
 
 const circle2 = {
     radius: 5,
-    getArea: getArea,
-    getPerimeter: getPerimeter,
+    getArea,
+    getPerimeter,
 };
 
 circle1.getArea();
@@ -115,14 +140,14 @@ circle2.getPerimeter();
 function seasons() {
     let season = Number(prompt('Введите месяц: число от 1 до 12'));
     if (season === 3 || season === 4 || season === 5) {
-        console.log('Весна');
+        alert('Весна');
     } else if (season === 6 || season === 7 || season === 8) {
-        console.log('Лето');
+        alert('Лето');
     } else if (season === 9 || season === 10 || season === 11) {
-        console.log ('Осень');
+        alert('Осень');
     } else if (season === 12 || season === 1 || season === 2) {
-        console.log('Зима');
+        alert('Зима');
     } else {
-        console.log('Вы ввели неправильное значение');
+        alert('Вы ввели неправильное значение');
     }
 }

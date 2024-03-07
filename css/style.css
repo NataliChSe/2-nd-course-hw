@@ -151,12 +151,14 @@ body {
     padding-right: calc(50% - 393px);
   }
   .season-game {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    padding-top: 179px;
+    padding-top: 51px;
+    padding-bottom: 85px;
   }
   .season-game__box {
     padding-bottom: 64px;
+    display: flex;
+    align-items: flex-start;
   }
 }
 @media (min-width: 768px) and (max-width: 833px) {
@@ -166,6 +168,19 @@ body {
   }
   .game-box {
     justify-content: center;
+  }
+  .season-game {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 179px;
+    padding-top: 51px;
+    padding-bottom: 85px;
+  }
+  .season-game__box {
+    padding-bottom: 64px;
+    display: flex;
+    align-items: center;
   }
 }
 @media (max-width: 767px) {
@@ -200,9 +215,19 @@ body {
   }
   .season-game__box {
     padding-bottom: 64px;
+    display: flex;
+    align-items: center;
   }
   .season-game__img_go {
     width: 344px;
     height: 236px;
+  }
+  .season-game__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .season-game__text {
+    font-size: 14px;
+    line-height: 22px;
   }
 }/*# sourceMappingURL=style.css.map */
