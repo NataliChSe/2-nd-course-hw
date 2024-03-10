@@ -105,7 +105,7 @@ console.log(squareNumber);
 
 
 
-// ***   12   ***                ?????????
+// ***   12   ***               
 
 const arrStr = ['дом', 'комната', 'земля'];
 const newArr = [];
