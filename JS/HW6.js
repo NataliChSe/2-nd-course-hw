@@ -108,13 +108,12 @@ console.log(squareNumber);
 // ***   12   ***                ?????????
 
 const arrStr = ['дом', 'комната', 'земля'];
+const newArr = [];
 
-const lengthArrStr = arrStr.map(function(str) {
-    arrStr.forEach((el) => {
-        console.log(el.length);
-    });
+const lengthArrStr = arrStr.forEach((el) => {
+    newArr.push(el.length);
 });
-
+console.log(newArr);
 
 
 // ***   13   ***
@@ -131,7 +130,7 @@ console.log(negativeNumber);
 const arrRandom = [];
 
 for (i = 0; i < 10; i++) {
-    arrRandom.push(Math.floor(Math.random() * 11));
+    arrRandom.push(Math.round(Math.random() * 10));
 }
 
 const evenNumber = arrRandom.filter(even => even % 2 === 0);
@@ -146,7 +145,7 @@ console.log(evenNumber);
 const arrRandom6 = [];
 
 for (i = 0; i < 6; i++) {
-    arrRandom6.push(Math.floor(Math.random() * 11));
+    arrRandom6.push(Math.round(Math.random() * 10));
 }
 const average = arrRandom6.reduce((total, num) => total + num, 0) / arrRandom6.length;
 
