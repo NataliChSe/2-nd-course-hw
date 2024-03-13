@@ -143,4 +143,54 @@ body {
         }
     }
 }
+
+.words-game {
+    background: rgb(0, 9, 21);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 233px;
+    padding-bottom: 233px;
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+    }
+    &__title {
+        color:  $color-text;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+    }
+    &__text {
+        color: $color-text;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;  
+    }
+    &__button {
+        color: $color-text;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        width: 234px;
+        height: 48px;
+        border-radius: 30px;
+        border: none;
+        background: rgb(156, 3, 50);
+        transition: all 0.5s;
+        &:hover {
+            cursor: pointer;
+            background: rgb(235, 68, 63);
+        }
+    }
+    &__img {
+        &_go {
+            width: 485px;
+            height: 333px;
+        }
+    }
+}
 @import 'mobile';
