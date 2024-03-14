@@ -9,15 +9,8 @@ console.log(upperCase);
 // ***   2   *** 
 
 function arrStr(arr, str) {
-    const newArr = [];
-    
-    arr.forEach((newStr) => {
-        if (newStr.toLowerCase().startsWith(str.toLowerCase())) {
-            newArr.push(newStr);
-        }
-    });
-
-    console.log(newArr);
+    const newArrStr = arr.filter(newStr => newStr.toLowerCase().startsWith(str.toLowerCase()));
+    console.log(newArrStr);
 } 
 arrStr(['право', 'трио', 'пророк', 'спрос'], 'пр');
 
@@ -111,9 +104,9 @@ function rememberWordGame() {
     let enterWord1 = prompt('Теперь напиши первое слово');
     let enterWord2 = prompt('Теперь напиши второе слово');
     
-    if (enterWord1.toLowerCase() === randomArrFruits[0].toLowerCase() && enterWord2.toLowerCase() === randomArrFruits[6].toLowerCase()) {
+    if (enterWord1.toLowerCase() === randomArrFruits[0].toLowerCase() && enterWord2.toLowerCase() === randomArrFruits[randomArrFruits.length -1].toLowerCase()) {
         alert('Угадал');
-    } else if (enterWord1.toLowerCase() === randomArrFruits[0].toLowerCase() || enterWord2.toLowerCase() === randomArrFruits[6].toLowerCase()) {
+    } else if (enterWord1.toLowerCase() === randomArrFruits[0].toLowerCase() || enterWord2.toLowerCase() === randomArrFruits[randomArrFruits.length -1].toLowerCase()) {
         alert('Почти угадал');
     } else {
         alert('Не угадал');
